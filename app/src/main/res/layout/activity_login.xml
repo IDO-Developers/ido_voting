@@ -18,7 +18,7 @@
         android:layout_width="374dp"
         android:layout_height="685dp"
         android:orientation="vertical"
-        android:background="#737379"
+        android:background="@drawable/edit_text"
         tools:layout_editor_absoluteX="2dp"
         tools:layout_editor_absoluteY="3dp">
 
@@ -47,30 +47,38 @@
             android:layout_height="35dp"
             android:layout_marginTop="12dp"
             android:gravity="center"
+            android:textStyle="bold"
             android:text="Por favor ingrese su identidad para continuar. "
-            android:textColor="#FF9100"
+            android:textColor="#111111"
             android:textColorHint="@color/colorPrimary"
             android:textSize="15dp" />
 
         <EditText
-            android:layout_width="200dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="25dp"
+            android:id="@+id/txtIdentidad"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text"
+            android:gravity="center"
+            android:maxLength="13"
             android:numeric="integer"
+            android:textColor="#000000"
+            android:textStyle="bold"
 
             />
 
 
         <Button
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:padding="15dp"
+            android:id="@+id/btnContinuar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="15dp"
+            android:background="@drawable/background_buttons2"
+            android:padding="15dp"
             android:text="Continuar"
-            android:background="#00E676"
-            android:textColor="#141314"
-            android:layout_gravity="center"/>
+            android:textColor="#76FF03" />
 
 
     </LinearLayout>
