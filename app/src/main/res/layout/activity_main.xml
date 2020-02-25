@@ -1,9 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/fondo"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+
+    <TextView
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+        android:textColor="#FF3D00"
+        android:background="@drawable/background_buttons2"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:text="Votaciones IDO 2020." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FF9100"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="Bienvenid@:." />
+
+    <TextView
+        android:id="@+id/nombreAlumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Nombre del alumno"
+        android:textColor="#FF3D00"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listaObjetosItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

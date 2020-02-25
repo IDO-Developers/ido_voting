@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:weightSum="2"
+    tools:context=".itemListView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@drawable/background_buttons2">
+
+        <ImageView
+            android:id="@+id/imagenPlanilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:srcCompat="@drawable/user" />
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/nombrePlanilla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:gravity="center"
+
+                android:text="Nombre de la planilla."
+                android:textColor="#FF3D00"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnVotar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_buttons2"
+                android:gravity="center"
+                android:text="VOTAR" />
+
+            <Button
+                android:id="@+id/btnVer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_buttons"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Ver Planilla" />
+
+            <TextView
+                android:id="@+id/numeroVotos"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0 Votos."
+                android:textColor="#FF3D00"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
