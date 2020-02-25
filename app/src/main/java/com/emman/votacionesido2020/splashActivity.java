@@ -8,9 +8,7 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.emman.votacionesido2020.ui.login.LoginActivity;
-
-public class splashActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private final int DURACION_SPLASH = 1000;
     @Override
@@ -25,7 +23,7 @@ public class splashActivity extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable(){
             public void run(){
-                Intent intent = new Intent(splashActivity.this, LoginActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             };
