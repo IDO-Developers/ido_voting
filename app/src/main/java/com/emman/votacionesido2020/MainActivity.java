@@ -2,12 +2,17 @@ package com.emman.votacionesido2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button detalle = (Button) findViewById(R.id.btnVer);
 
     ListView lista;
     ArrayList<Datos> datos;
@@ -38,5 +43,15 @@ public class MainActivity extends AppCompatActivity {
 
         Adaptador adaptador = new Adaptador(getApplicationContext(),datos);
         lista.setAdapter(adaptador);
+
+        detalle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, DetalleActivity.class);
+                startActivity(intent2);
+            }
+        });
     }
+
+
 }
