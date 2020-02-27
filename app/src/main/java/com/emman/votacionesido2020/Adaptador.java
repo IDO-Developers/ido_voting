@@ -44,9 +44,14 @@ public class Adaptador extends BaseAdapter {
 
         ImageView imagenPlanilla = (ImageView) vista.findViewById(R.id.imagenPlanilla);
         TextView nombrePlanilla = (TextView) vista.findViewById(R.id.nombrePlanilla);
+        TextView detallePlanilla = (TextView) vista.findViewById(R.id.detallePlanilla);
+        TextView numeroVotos = (TextView) vista.findViewById(R.id.numeroVotos);
 
-        nombrePlanilla.setText(listaObjetos.get(position).getPlanilla());
         imagenPlanilla.setImageResource(listaObjetos.get(position).getImagenPlanilla());
+        nombrePlanilla.setText(listaObjetos.get(position).getTitulo());
+        detallePlanilla.setText(listaObjetos.get(position).getDetalle());
+        numeroVotos.setText("Total votos: "+listaObjetos.get(position).getVotos());
+
 
         return vista;
 

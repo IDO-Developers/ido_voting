@@ -1,6 +1,8 @@
 package com.emman.votacionesido2020;
 
-public class Datos {
+import java.io.Serializable;
+
+public class Datos implements Serializable {
     private int id;
     private String titulo;
     private String detalle;

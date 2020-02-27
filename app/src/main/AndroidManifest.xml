@@ -16,9 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".itemListView"></activity>
-        <activity android:name=".DetalleActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".DetalleActivity"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
